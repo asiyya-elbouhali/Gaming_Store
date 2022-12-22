@@ -8,8 +8,8 @@
 
 
 
-$sqlQuery = "SELECT id FROM admin WHERE username = :username AND password = :password ";
-$authStatement = $mysqlClient->prepare($sqlQuery);
+$sqlQuery = "SELECT id FROM admin WHERE username = :username AND password = :password";
+$authStatement = $mysqlClient-> prepare($sqlQuery);
 $authStatement->execute([
   'username' => $username,
   'password' => $password,

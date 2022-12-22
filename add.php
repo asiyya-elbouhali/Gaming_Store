@@ -59,12 +59,12 @@
 
 <div class="container">
 
-<div class="row">
+<div class="row"> 
 
 <form method="POST" action="addproduct.php" enctype="multipart/form-data">
     <div class="mb-3 chmp">
-        <label for="nomproduit" class="form-label label-f">Nom</label>
-        <input type="text" class="form-control" id="nomproduit" name="nomproduit" required>
+        <label for="nomproduit" class="form-label label-f" >Nom</label>
+        <input type="text" class="form-control" id="nomproduit" style="width: 100%;" name="nomproduit" required>
     </div>
     <div class="mb-3 chmp">
       <label for="picproduit" class="form-label label-f">Picture</label>
@@ -101,7 +101,8 @@
 
 </div>
 
-
+<button type="button" class="btn btn-outline-primary " style="margin-left: 5.8%;">
+<a href="management.html"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg> Back</a>  </button>
 
 
 

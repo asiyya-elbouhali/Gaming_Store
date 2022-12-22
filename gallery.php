@@ -148,7 +148,7 @@ if(isset($_POST['categorieproduit'])){
    ?>
 
     <div class="card card2 col-md-5 col-lg-3 col-sm-10" id="<?=$product['id']?>" style="width: 18rem;">
-    <img src="uploads/<?=$product['img']?>" class="card-img-top" alt="...">
+    <img src="uploads/<?=$product['img']?>" class="card-img-top" alt="..." >
     <div class="card-body">
       <h5 class="card-title"><?=$product['libelle']?></h5>
       <h4>Prix: <?=$product['prix']?>,00 DH</h4>

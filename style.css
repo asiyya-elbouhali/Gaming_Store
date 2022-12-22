@@ -460,7 +460,7 @@ a:active:hover {
 input {
   display: block;
   box-sizing: border-box;
-  width: 100%;
+  width: 50%;
   outline: none;
   height: 60px;
   line-height: 60px;
@@ -469,10 +469,10 @@ input {
 
 input[type="text"],
 input[type="password"] {
-  width: 100%;
+  width: 50%;
   padding: 0 0 0 10px;
   margin: 0;
-  color: #8a8b8e;
+  color: rgb(138, 139, 142);
   border: 1px solid #c2c0ca;
   font-style: normal;
   font-size: 16px;
@@ -486,7 +486,7 @@ input[type="password"] {
 
 input[type="text"]:focus,
 input[type="email"]:focus {
-  border-color: #3ca9e2;
+  border-color: rgb(60, 169, 226);
 }
 
 input[type="text"]:focus:invalid,

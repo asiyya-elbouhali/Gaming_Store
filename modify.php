@@ -102,24 +102,26 @@ foreach ($productmodify as $product) {
 <div class="row modify-row">
 
 <form method="POST" action="modifyproduit.php" enctype="multipart/form-data">
-<div class="mb-3">
+<!-- <div class="mb-3">
         <label for="idproduit" class="form-label">ID Produit</label>
         <input type="text" class="form-control" id="idproduit" name="idproduit" value="<?php echo $idproduct; ?>">
-    </div>
-    <div class="mb-3">
-        <label for="nomproduit" class="form-label">Nom</label>
-        <input type="text" class="form-control" id="nomproduit" name="nomproduit" value="<?php echo $_POST['productname']; ?>">
+    </div> -->
+    <div class="mb-3" style="margin-top: 30px;">
+        <label for="nomproduit" class="form-label">Product</label>
+        <input type="text" class="form-control" id="nomproduit" name="nomproduit" style="width: 100%;" value="<?php echo $_POST['productname']; ?>">
     </div>
     <div class="mb-3">
       <label for="picproduit" class="form-label">Picture</label>
       <input class="form-control" type="file" id="picproduit" name="picproduitt">
+      <img src="uploads/<?=$product['img']?>" alt="" style="height:300px;"> 
+      <!-- image gallery  -->
     </div>
     <div class="mb-3">
-        <label for="quantiteproduit" class="form-label">Quantité</label>
+        <label for="quantiteproduit" class="form-label">Quantity</label>
         <input type="nombre" class="form-control" id="quantiteproduit" name="quantiteproduit" value="<?php echo $_POST["productquantite"]; ?>">
     </div>
     <div class="mb-3">
-        <label for="prixproduit" class="form-label">Prix</label>
+        <label for="prixproduit" class="form-label">Price</label>
         <input type="nombre" class="form-control" id="prixproduit" name="prixproduit" value="<?php echo $_POST["productprice"]; ?>">
     </div>
     <select class="form-select mb-3" aria-label="Default select example" name="categorieproduit">
@@ -134,11 +136,12 @@ foreach ($productmodify as $product) {
     </select>
     <button type="submit" class="btn btn-primary">modifier</button>
 </form>
-
-
 </div>
 
 </div>
+<button type="button" class="btn btn-outline-primary " style="margin-left: 5%;">
+<a href="gallery-gestion.php"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg> Back</a>  </button>
+
 
 
 

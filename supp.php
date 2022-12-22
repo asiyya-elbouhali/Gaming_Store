@@ -15,7 +15,6 @@ $deletproduct = $mysqlClient->prepare($sqlQuery);
 $deletproduct->execute([
   'productid' => $productid,
 ]);
-
 header("Location: gallery-gestion.php");
 
 ?>
